@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block sidebar %}
+{% endblock %}
+{% block content %}
+
+<form method="post" action="/login/">
+<p>
+Username:{{ form.username }}
+</p>
+<p>
+Password:{{ form.password }}
+</p>
+<input type="submit" value="login" />
+</form>
+{% endblock %}
+</p>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<p>
+{% block sidebar %}
+{% for  mel in menuelements %}
+  <a href:"{{ mel.link }}">{{ mel.text }}</a></br>
+{% endfor %}
+{% endblock %}
+ </p>
+ <p>
+{% block content %}
+{% for  p in profiles %}
+Username: {{ p.username }} </br>
+{{ p.user.username }} </br>
+{{ p.user.first_name }} </br>
+{{ p.user.last_name }} </br>
+Skype: {{ p.skype }} </br>
+{% endfor %}
+<a href="/logout">Logout</a>
+ 
+{{ utente.username }}
+
+{% endblock %}
+</p>
